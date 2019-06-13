@@ -1,0 +1,25 @@
+.add {
+  width: 74%;
+  background-image: url(../../src/assets/timg6.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 15%;
+  padding-top: 20px; }
+
+/*.add-top{
+    margin-right: 10%;
+}*/
+p:nth-child(1) {
+  color: blue;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 800; }
+
+.el-form-item__label {
+  width: 83px; }
+
+.add-top {
+  /*margin-top: -40%;*/
+  margin-right: 40%; }
+
+/*# sourceMappingURL=add.css.map */

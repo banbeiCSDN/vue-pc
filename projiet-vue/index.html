@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="static/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css"/>
+       <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>projiet-vue</title>
+    <style>
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+   
+    <script src="static/js/jquery-1.8.3.min.js"></script>
+ <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+ <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script>
+
+
+
+	var citys=[
+	{"pid":"41","value":"4101","name":"郑州"},
+	{"pid":"41","value":"4102","name":"开封"},
+	{"pid":"31","value":"3101","name":"石家庄"},
+	{"pid":"31","value":"3102","name":"邯郸"}
+	];
+	$("#province").change(function(){
+		$("#city").html("");
+		var pid=$(this).val();
+		for(var i=0;i<citys.length;i++)
+		{
+			if(citys[i].pid==pid)
+			{
+				var newhtml="<option value='"+citys[i].value+"'>"+citys[i].name+"</option>";
+				$("#city").append(newhtml);
+			}
+			
+		}
+
+	});
+	
+	
+
+</script>
+ <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                var top = $(window).scrollTop() + 200;
+                var left = $(window).scrollLeft() + 320;
+                $("#editInfo").animate({ "top": top }, 30);  //方式一  效果比较理想
+                //$("#editInfo").css({ left: left + "px", top: top + "px" });  方式二 有阴影
+            });
+        }); 
+        
+    </script>
+     <script> 
+$(function(){
+                $('#myCarousel').carousel({interval:2000});
+            })
+ </script>
+ 	<script>
+$(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $(".fix").fadeIn(1500);
+                }
+                else
+                {
+                    $(".fix").fadeOut(1500);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+            $(".fix").click(function(){
+                //$('body,html').animate({scrollTop:0},1000);
+        if ($('html').scrollTop()) {
+                $('html').animate({ scrollTop: 0 }, 1000);
+                return false;
+            }
+            $('body').animate({ scrollTop: 0 }, 1000);
+                 return false;            
+           });       
+     });    
+});
+</script>
+  </body>
+</html>

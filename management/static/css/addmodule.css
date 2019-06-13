@@ -1,0 +1,42 @@
+.addmodule {
+  /*margin-right:30%;*/
+  width: 65%;
+  background-image: url(../../src/assets/timg8.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+  padding-right: 15%;
+  padding-top: 20px; }
+
+h2 {
+  color: #54AADC; }
+
+.addessential1 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+select {
+  /*text-align: center;*/ }
+
+.addessential-left {
+  width: 50%;
+  margin-right: 10%; }
+
+.addessential-right {
+  width: 40%;
+  margin-right: 10%;
+  margin-top: 5%; }
+
+.el-textarea__inner {
+  width: 150%; }
+
+span:nth-child(2) {
+  margin-left: 10px; }
+
+p {
+  color: #54AADC;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=addmodule.css.map */

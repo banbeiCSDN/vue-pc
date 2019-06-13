@@ -1,0 +1,27 @@
+.addclient {
+  /*margin-right: 21%;*/
+  width: 75%;
+  background-image: url(../../src/assets/timg8.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-right: 5%; }
+
+h2 {
+  color: #54AADC; }
+
+.addessential1 {
+  display: flex;
+  justify-content: space-between; }
+
+select {
+  /*text-align: center;*/ }
+
+.addessential-left {
+  width: 40%; }
+
+.addessential-right {
+  width: 40%; }
+
+/*# sourceMappingURL=addclient.css.map */

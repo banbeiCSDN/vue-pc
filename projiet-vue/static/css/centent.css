@@ -1,0 +1,209 @@
+li {
+	list-style: none;
+}
+
+.centent-en {
+	width: 100%;
+	height: 300px;
+	/*background-image: url(../assets/cent1_02.png);*/
+	position: relative;
+}
+
+.centent-en1 {
+	width: 20%;
+	margin-left: 8%;
+	position: absolute;
+	top: 10px;
+	background-color: white;
+}
+
+.centent-ene img {
+	height: 300px;
+}
+
+.centent-en1>h2 {
+	padding-top: 5px;
+}
+
+.centent-en1>p {
+	color: gray;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.inp2 {
+	width: 50%;
+	background-color: #F6F6F6;
+	height: 25px;
+	border: 0px solid gainsboro;
+}
+
+.inp3 {
+	width: 25%;
+	background-color: #F6F6F6;
+	height: 25px;
+	border: 0px solid gainsboro;
+}
+
+.inp4 {
+	width: 50%;
+	height: 25px;
+	background-color: #FF9C00;
+	border: 0px solid gainsboro;
+	color: white;
+}
+
+.centent-ul {
+	width: 100%;
+	margin: auto;
+	background-color: gainsboro;
+}
+
+.centent-ul1 {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.centent-ul1>li {
+	width: 20%;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-right: 1px solid gray;
+}
+
+.centent-ul1>li>p:nth-child(1) {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.centent-ul1>li>p:nth-child(2) {
+	color: gray;
+}
+
+.centent-zhuang {
+	width: 80%;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.centent-zhuang>p {
+	color: gray;
+}
+
+.centent-zhuang>ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.centent-zhuang1>ul>li {
+	width: 25%;
+	border-right: 5px solid white;
+}
+
+.centent-ul3 img {
+	height: 301.06px;
+}
+
+
+/**/
+
+.centent-zhuang11 {
+	width: 80%;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.centent-zhuang11>ul>li {
+	position: relative;
+}
+
+.p2 {
+	font-size: 16px;
+	color: black;
+}
+
+.centent-zhuang11>p {
+	margin-top: 10px;
+}
+
+.span1 {
+	margin-top: 10px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+	border: 1px solid gray;
+}
+
+.p3 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.centent-zhuang11ul {
+	background-color: white;
+	position: absolute;
+	bottom: -65px;
+	width: 98%;
+}
+
+.centent-xiu {
+	padding-top: 200px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.centent-xiu11 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.centent-xiu1 {
+	width: 60%;
+}
+
+.centent-xiu2 {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.centent-xiu2>ul>li {
+	height: 18%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	display: flex;
+	justify-content: space-between;
+	border: 1px dashed gainsboro;
+}
+
+.centent-gong {
+	width: 80%;
+	margin: auto;
+}
+
+.centent-gong1ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.centent-gong1ul img {
+	margin-bottom: 30px;
+}
+
+.centent-gong1ul>li>ul>li {
+	padding-bottom: 20px;
+	font-size: 14px;
+	color: gray;
+	text-align: left;
+	margin-left: 10%;
+}

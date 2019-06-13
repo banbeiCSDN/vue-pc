@@ -1,0 +1,96 @@
+li {
+	list-style: none;
+}
+
+.main-cen {
+	height: 677px;
+	background-image: url(../../src/assets/tmp1541384575_1783434_s.jpg);
+	background-size: 100%, 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.main-ce {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.main-CModulePA {
+	width: 100%;
+	text-align: center;
+}
+
+.main-CModulePA p:nth-child(1) {
+	font-size: 32px;
+	color: #333333;
+	font-family: 微软雅黑;
+}
+
+.main-CModulePA span {
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #999999;
+	line-height: 1.9;
+}
+
+.main-CModulePA>ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-CModulePA>ul>li {
+	width: 20%;
+	border: 1px solid #FFFBEB;
+	box-shadow: 2px 2px 2px #FFFBEB;
+	padding: 15px;
+}
+
+.main-wvmo {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	height: 1px;
+	width: 100%;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+
+.main-CModulePA1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.main-CModulePA1>ul {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-CModulePA1>ul>li {
+	width: 20%;
+	border: 1px solid gainsboro;
+	padding: 15px;
+}
+
+.main-cen1 {
+	width: 23%;
+	background-color: white;
+	font-size: 12px;
+	color: #666666;
+	line-height: 1.8;
+	padding: 40px;
+	position: absolute;
+	top: 20px;
+	left: 63%;
+}
+
+.main-cen1 p {
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.8;
+	font-weight: 600;
+}

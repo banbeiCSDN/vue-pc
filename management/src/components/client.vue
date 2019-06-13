@@ -1,0 +1,185 @@
+<template>
+	<div class="client">
+		<div class="chakan-top">
+			<i class="el-icon-search"></i>
+			<span>公司名称</span>
+		<input type="text" id="" value="" />
+			<el-button type="primary" round>查询</el-button>
+			<span style="margin-left: 100px;">
+				<el-button type="primary" round >高级搜索</el-button>
+			</span>
+<div class="chakan-top1">
+			<span>选择 <a href="#">全选</a>-<a href="#">反选</a></span>
+				 <el-button type="primary" disabled>删除所选人员信息</el-button>
+				  <el-button type="primary" disabled>
+				  		<router-link to="/addclient" style="text-decoration: none;" >添加人员信息
+					</router-link></el-button>
+			</div>
+		</div>
+
+		<div class="chakan-ce">
+			<h2>  客户详细列表</h2>
+			<el-table :data="tableData" style="width: 100%">
+<el-table-column label="选择" width="60" >
+	<input type="checkbox">
+				</el-table-column>
+				<el-table-column prop="name1" label="公司名称" width="140">
+				</el-table-column>
+<!--<el-table-column prop="name2" label="联系人" width="60">
+				</el-table-column>-->
+				<el-table-column prop="mone" label="联系电话" width="110">
+				</el-table-column>
+			
+
+				<el-table-column label="联系人" width="100">
+					<template slot-scope="scope">
+						<el-popover trigger="hover" placement="top">
+
+							<p>姓名: {{ scope.row.name }}</p>
+							<p>住址: {{ scope.row.address }}</p>
+							<div slot="reference" class="name-wrapper">
+								<el-tag size="medium">{{ scope.row.name }}</el-tag>
+							</div>
+						</el-popover>
+					</template>
+				</el-table-column>
+				
+				
+				<el-table-column prop="renshu" label="公司背景" width="180">
+					
+					
+				</el-table-column>
+				
+				
+				
+				<el-table-column prop="shijian2" label="添加时间" width="110">
+				</el-table-column>
+				
+				<el-table-column label="操作">
+					<template slot-scope="scope">
+						<el-button size="mini" @click="handleEdit(scope.$index, scope.row)"style="margin: 0px;">编辑</el-button>
+						<el-button size="mini" type="danger"style="margin: 0px;">查看</el-button>
+						<!--<el-button size="mini" @click="handleEdit(scope.$index, scope.row)"style="margin: 0px;">变更</el-button>-->
+						<!--<el-button size="mini" type="danger"style="margin: 0px;">需求</el-button>-->
+					</template>
+				</el-table-column>
+			</el-table>
+			<el-pagination background layout="prev, pager, next" :total="50">
+			</el-pagination>
+
+		</div>
+	</div>
+</template>
+
+<script>
+	
+	
+	export default {
+		name: 'client',
+		data() {
+			return {
+
+				startTime: '',
+				endTime: '',
+				tableData: [{
+					date: '2016-05-02',
+					name1: '深圳网上交易市场',
+					name: '张三',
+					name2: '张三',
+					mone:'55555555555',
+					renshu:'该公司致力于电子商务的网上贸易，主要发展......',
+					zhichu:'300万',
+					
+					shijian2:'2007-12-12',
+					name3: '急',
+					name4:'已完成',
+					address: '深圳经济技术开发区'
+				}, {
+					date: '2016-05-02',
+					name1: '深圳网上交易市场',
+					name: '张三',
+					name2: '张三',
+					mone:'55555555555',
+					renshu:'该公司致力于电子商务的网上贸易，主要发展......',
+					zhichu:'300万',
+					
+					shijian2:'2007-12-12',
+					name3: '急',
+					name4:'已完成',
+					address: '深圳经济技术开发区'
+				}, {
+					date: '2016-05-02',
+					name1: '深圳网上交易市场',
+					name: '张三',
+					name2: '张三',
+					mone:'55555555555',
+					renshu:'该公司致力于电子商务的网上贸易，主要发展......',
+					zhichu:'300万',
+					
+					shijian2:'2007-12-12',
+					name3: '急',
+					name4:'已完成',
+					address: '深圳经济技术开发区'
+				}, {
+					date: '2016-05-02',
+					name1: '深圳网上交易市场',
+					name: '张三',
+					name2: '张三',
+					mone:'55555555555',
+					renshu:'该公司致力于电子商务的网上贸易，主要发展......',
+					zhichu:'300万',
+					
+					shijian2:'2007-12-12',
+					name3: '急',
+					name4:'已完成',
+					address: '深圳经济技术开发区'
+				}]
+			}
+		},
+		methods: {
+			handleEdit(index, row) {
+				console.log(index, row);
+			},
+			handleDelete(index, row) {
+				console.log(index, row);
+			}
+			
+			
+
+		}
+
+	}
+</script>
+
+<style scoped="scoped">
+	h2{
+		color:#54AADC;
+	}
+	.client {
+		width: 81%;
+	background-image: url(../assets/timg4.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding-left: 5%;
+	padding-top: 20px;
+	}
+	
+	.chakan-ce {
+		width:80%;
+		
+	}
+	
+	.chakan-top {
+		/*padding-top: -100px;*/
+		padding-top: 10px;
+		/*padding-bottom: 100px;*/
+		/*margin-top: -33%;*/
+		width: 70%;
+		text-align: start;
+		margin-left: 20%;
+	}
+	.chakan-top1{
+		margin-top: 20px;
+		
+	}
+</style>

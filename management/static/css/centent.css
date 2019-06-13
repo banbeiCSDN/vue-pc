@@ -1,0 +1,38 @@
+p {
+  margin: 0px; }
+
+header {
+  background-color: #E6F5FF;
+  color: #333;
+  text-align: center; }
+
+.p1 {
+  color: #799FD9;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 10px; }
+
+.p2 {
+  color: #799FD9; }
+
+.p3 {
+  text-align: end; }
+
+.top-centent {
+  /*  width: 100%;*/
+  width: 140%;
+  display: flex;
+  justify-content: space-between; }
+
+.top-left {
+  /*width: 14%;*/
+  width: 100%;
+  /*border: 1px solid red;*/
+  margin-left: 1%; }
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px; }
+
+/*# sourceMappingURL=centent.css.map */
